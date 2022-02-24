@@ -15,9 +15,18 @@
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowActionBarOverlay">true</item>
         <!-- Enables transitions -->
-        <item name="android:windowActivityTransitions">true </item>
+        <item name="android:windowActivityTransitions">true</item>
         <!-- Sets up transitions -->
         <item name="android:windowEnterTransition">@transition/animation</item>
         <item name="android:windowExitTransition">@transition/animation</item>
     </style>
+
+    <style name="Theme.HouseMate_02.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.HouseMate_02.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.HouseMate_02.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

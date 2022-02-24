@@ -10,10 +10,12 @@ public class Book {
 
     public Book(){}
 
-    public Book(String Name, String EMail) {
+    public Book(String Name, String Surname, String EMail, String dNascita) {
         super();
         this.Name = Name;
+        this.Surname = Surname;
         this.EMail = EMail;
+        this.dNascita = dNascita;
     }
 
 

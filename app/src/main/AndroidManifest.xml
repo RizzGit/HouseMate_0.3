@@ -10,6 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HouseMate_02">
         <activity
+            android:name=".FindActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.HouseMate_02.NoActionBar" />
+        <activity
+            android:name=".ActivityPerFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ScrollingActivityTest"
+            android:exported="false"
+            android:label="@string/title_activity_scrolling_test"
+            android:theme="@style/Theme.HouseMate_02.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".Register_Activity"
             android:exported="false" />
         <activity

@@ -1,5 +1,6 @@
 package com.example.housemate_02;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -12,20 +13,20 @@ import android.util.Log;
 
 import com.example.housemate_02.Book;
 
-public class MySQLiteHelper extends SQLiteOpenHelper {//usiamo la classe OpenHelper pewr l'utilizzo dei DB
+public class MySQLiteHelper extends SQLiteOpenHelper implements Serializable {//usiamo la classe OpenHelper pewr l'utilizzo dei DB
 
     // Database Version
     private static final int DATABASE_VERSION = 1;
     // Database Name
-    private static final String DATABASE_NAME = "BookDB";
+    private static final String DATABASE_NAME = "UserDB";
 
     // Books table name
-    private static final String TABLE_BOOKS = "books";
+    private static final String TABLE_BOOKS = "users";
 
     // Books Table Columns names
-    private static final String KEY_ID = "id";
-    private static final String KEY_TITLE = "title";
-    private static final String KEY_AUTHOR = "author";
+    private static final String KEY_ID = "email";
+    private static final String KEY_TITLE = "nome";
+    private static final String KEY_AUTHOR = "password";
 
     private static final String[] COLUMNS = {KEY_ID,KEY_TITLE,KEY_AUTHOR};
 

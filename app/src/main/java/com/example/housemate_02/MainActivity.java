@@ -11,8 +11,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.io.Serializable;
+
 public class MainActivity extends AppCompatActivity {
 
+    private MySQLiteHelper db = new MySQLiteHelper(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         View decorView = getWindow().getDecorView();
+
 
     }
 
@@ -34,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(MainActivity.this, Register_Activity.class);
         Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
         startActivity(i, b);
+        //i.putExtra("DB",(Serializable) db); //Non funziona, commenta e Crea DB altrove per eseguire senza crash
     }
 
     public void onWindowFocusChanged (boolean hasFocus){

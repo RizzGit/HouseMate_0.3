@@ -63,6 +63,7 @@
         android:layout_height="65dp"
         android:background="@drawable/custom_button"
         android:fontFamily="@font/comfortaa_bold"
+        android:onClick="goHome"
         android:text="Continua"
         android:textAllCaps="false"
         android:textColor="#285943"

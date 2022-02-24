@@ -57,46 +57,13 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
         app:layout_constraintVertical_bias="0.045" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="300dp"
-        android:layout_height="65dp"
-        android:background="@drawable/custom_input"
-        android:ems="10"
-        android:fontFamily="@font/comfortaa_bold"
-        android:hint="E-mail"
-        android:inputType="textEmailAddress"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-        app:layout_constraintVertical_bias="0.077" />
-
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="300dp"
-        android:layout_height="65dp"
-        android:background="@drawable/custom_input"
-        android:ems="10"
-        android:fontFamily="@font/comfortaa_bold"
-        android:hint="Data di nascita"
-        android:inputType="date"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2"
-        app:layout_constraintVertical_bias="0.118" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="300dp"
         android:layout_height="65dp"
         android:background="@drawable/custom_button"
         android:fontFamily="@font/comfortaa_bold"
+        android:onClick="goLogin"
         android:text="Continua"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -105,4 +72,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.93" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_bold"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_bold"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintVertical_bias="0.059" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
